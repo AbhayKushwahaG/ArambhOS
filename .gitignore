@@ -1,0 +1,64 @@
+# ==============================================================================
+# Aarambh OS - .gitignore
+# 32-bit x86 Protected-Mode & Real-Mode OS Repository
+# ==============================================================================
+
+# --- Toolchain & Freestanding Build Outputs ---
+*.o
+*.obj
+*.bin
+*.elf
+*.exe
+*.out
+*.lst
+*.map
+
+# Build output directories
+build/
+micropy32/build/
+bin/
+dist/
+out/
+
+# --- Virtual Disk & Machine Images (Generated on demand) ---
+*.img
+*.iso
+*.vmdk
+*.qcow2
+*.vdi
+
+# --- Emulation, Serial & Debug Logs ---
+*.log
+pm32-debug.log
+qemu.log
+serial.log
+
+# --- Python Bytecode & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# --- Temporary Files, Archives & Backups ---
+backup-*/
+quarantine-*/
+scratch/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.tmp
+test_host.txt
+
+# --- Editor & Operating System Metadata ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
